@@ -2,8 +2,8 @@ import React from 'react';
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import cardIMG from '../images/header/card.png'
-
+import cardIMG from '../../images/header/card.png'
+import s from './Card.module.css'
 const Card = () => {
 
     const cardArray = [
@@ -23,24 +23,28 @@ const Card = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: false
     };
     return (
         <div className={'card'}>
-            <Slider {...settings}>
-                {cardArray.map(el => {
-                    return (<div key={el.id}>
-                            <div className="card-top">
-                                <img src={el.images} alt=""/>
+            <div className={s.container}>
+                <Slider {...settings}>
+                    {cardArray.map(el => {
+                        return (<div className={s.cardWrap} key={el.id}>
+                                <div className={s.cardTop}>
+                                    <img src={el.images} alt=""/>
+                                </div>
+                                <div className="card-bottom">
+                                    <button>{el.button}</button>
+                                </div>
                             </div>
-                            <div className="card-bottom">
-                                <button>{el.button}</button>
-                            </div>
-                        </div>
 
-                    )
-                })}
-            </Slider>
+                        )
+                    })}
+                </Slider>
+            </div>
+
 
 
         </div>

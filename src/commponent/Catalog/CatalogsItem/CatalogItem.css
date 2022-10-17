@@ -1,0 +1,15 @@
+.catalog-subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog-images{
+    width: 350px;
+    height: 419px;
+
+}
+.catalog-subtitle__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}

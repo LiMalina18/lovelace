@@ -1,0 +1,31 @@
+.container {
+    max-width: 1512px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header{
+    background-color: #2C3C48;
+
+}
+.headercontainer{
+    display: flex;
+    /*display: flex;*/
+    justify-content: space-between;
+
+    align-items: center;
+}
+.headercontainer ul{
+    display: flex;
+
+}
+.headercontainer li{
+  padding: 0 30px;
+
+}
+
+.headerNav{
+    color: white;
+}
+.headerLogo{
+    color: white;
+}
