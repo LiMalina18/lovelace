@@ -1,7 +1,12 @@
 .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    border: 2px solid;
+}
+.containerIr{
     max-width: 1512px;
     padding: 0 10px;
-    margin: 0 auto;
+    background: #2C3C48;
 }
 .header{
     background-color: #2C3C48;

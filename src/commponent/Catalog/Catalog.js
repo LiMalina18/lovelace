@@ -10,7 +10,7 @@ const Catalog = () => {
 <div >
     <img className={'catalog-img'} src={CatalogIMG} alt=""/>
 </div>
-
+<div className="containere">
               <div className="catalog-items">
                   <CatalogItem/>
                   <CatalogItem/>
@@ -21,6 +21,7 @@ const Catalog = () => {
               </div>
 
 
+           </div>
            </div>
         </div>
     );
